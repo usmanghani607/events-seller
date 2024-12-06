@@ -1,0 +1,102 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .home-banner .banner-text h2 { font-size: 18px; margin-bottom: 10px; }
+    .home-banner .banner-text p { font-size: 12px; margin-bottom: 15px; }
+    .home-banner .banner-text .search-area { padding: 0; }
+    .home-banner .banner-text { padding: 40px 0; }
+
+    .home-banner .form-select.country { background-image: url(../images/location-icon.png), url(../images/arrow-dropdown.png); background-repeat: no-repeat; background-position: left 8px center, right 10px center; background-size: 13px 18px, 17px 10px; padding-left: 40px; padding-right: 40px; border: 1px solid #E4E4E4; border-radius: 4px; padding: 8px 25px; font-size: 17px; width: auto; }
+    .home-banner { height: auto; }
+    .popular-event .tab-content .card.first { margin-right: 0; }
+    .popular-event .tab-content .card.sec { margin: 0; }
+    .popular-event .tab-content .card.third { margin-left: 0; }
+    .popular-event .tab-content .card .card-body h5.card-title { height: auto; }
+    .popular-event { padding: 30px 0 0px 0; }
+    .card.fst { margin-right: 0; }
+    .host-area .card.sec { margin: 0; }
+    .host-area .card.third { margin-left: 0; }
+    .host-area .col { padding: 10px 30px; }
+    .host-area { padding: 20px 0 30px 0; }
+    .host-area .heading h2 { padding-bottom: 25px; }
+    .near-event #carouselEvent .card.first { margin-right: 0; margin-left: 0; }
+    .near-event #carouselEvent .card.sec { margin: 0; }
+    .near-event #carouselEvent .card.third { margin-left: 0; margin-right: 0; }
+    .near-event #carouselEvent .card .card-body h5.card-title { height: auto; }
+    .popular-event .nav.nav-tabs.tappes { margin-bottom: 10px; }
+    .category-area img.category-right { display: none; }
+
+    .category-area { padding: 20px 0 10px 0; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-thumb { background-color: #888; border-radius: 10px; }
+    ::-webkit-scrollbar-track { background-color: #f1f1f1; }
+    .nav-tabs-wrapper { scrollbar-width: thin; scrollbar-color: #888 #f1f1f1; }
+    ::-webkit-scrollbar-thumb:hover { background-color: #555; }
+
+    .topheader .col.bro-mob { display: none; }
+    /* .topheader .collapse.navbar-collapse { display: block; }
+    .topheader .right_btn .btn_create { display: none; }
+    .topheader #indexForm .form-select.state { width: auto; } */
+
+    .category-area img.img-fluid { width: 90px; height: 80px; }
+    .category-area img { margin: 0 5px; }
+    .popular-event .row.row-cols-1.row-cols-md-3.g-4.mb-5 { margin-top: -10px; }
+    .sponsored-area { padding: 20px 0; }
+    .footer-bg { padding-left: 10px; }
+    .footer-bg .footer_widgth.touch { margin-left: 65px; }
+    .footer-bg .footer_widgth.social { display: none; }
+    .event-detail .col-md-8.main-area { width: 100%; }
+    .event-detail .col-md-4.side { width: 100%; }
+    .event-detail .side-area { margin-left: 0; }
+    .event-detail .side-area-social { margin-left: 0; }
+    .might-like .card.first { margin: 0; }
+    .might-like .card { height: auto; }
+    .might-like .card .card-body.sale h3 { width: 52%; }
+    .might-like .card .card-body.fast h3 { width: 39%; }
+    .might-like .card .card-body.salesoon h3 { width: 52%; }
+    .might-like { padding: 0; }
+    .might-like .card.third { margin: 0; }
+    .event-detail .col-md-8.main-area .ticket-info .card-info.row .col-md-2 { width: 100%; }
+    .event-detail .col-md-8.main-area .ticket-info .card-info.row .col-md-8 { width: 100%; }
+    .event-detail .sale-area { width: 40%; }
+    .event-detail.fade-background { background: none !important; }
+
+
+}
+
+@media (max-width: 767.98px) {
+    .two-images-row { display: none; }
+    .sponsored-area .spons-right { display: none; }
+    .sponsored-area .spons-left { display: none; }
+}
+
+@media (min-width: 768px) {
+    .one-image-row {
+        display: none;
+    }
+}
+
+/* For mobile view */
+@media (max-width: 767px) {
+
+    /* ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #EEEEEE; }       
+    ::-webkit-scrollbar-thumb { background: #AAAAAA; } */
+    .nav-tabs-wrapper { overflow-x: auto; white-space: nowrap; }
+    .nav-tabs { display: inline-flex; flex-wrap: nowrap; }
+    .nav-item { flex: 0 0 auto; }
+    .nav-link { white-space: nowrap; }
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
+
+
+}
+
+@media only screen and (max-width: 950px) and (min-width: 320px) and (orientation: landscape) {
+
+
+}
