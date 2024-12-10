@@ -165,3 +165,127 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 /* .dashboard .category .category-sidebar a { transition: background-color 0.3s ease, color 0.3s ease; } */
 .dashboard .category .category-sidebar li a { display: block; text-decoration: none; padding: 3px 8px; color: #fff; font-size: 14px; font-weight: 500; }
 .dashboard .category .category-sidebar a.active { width: 100%; border: none; padding: 10px 8px; background: #fff; color: #F05336; border-radius: 10px; opacity: 1; text-align: left; font-size: 14px; font-weight: 500; text-decoration: none; }
+
+
+
+
+/*Promo page*/
+
+
+/* .dashboard.promo-area .add-ticket-btn { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 15px; } */
+.dashboard.promo-area .promo { padding: 40px 50px; }
+.dashboard.promo-area .promo h2 { font-size: 20px; font-weight: 600; padding-bottom: 10px; }
+.dashboard.promo-area .promo h4 { font-size: 16px; font-weight: 400; color: #333333; padding-bottom: 15px; }
+.dashboard.promo-area .add-promo { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; }
+
+.dashboard.promo-area #addPromoModal input { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
+.dashboard.promo-area #addPromoModal .input-group .custom-select-arrow { background: url(../images/dropdown.png) no-repeat right 10px center; background-size: 15px; cursor: pointer; }
+.dashboard.promo-area #addPromoModal select { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
+.dashboard.promo-area #addPromoModal .percent input { width: 55%; }
+.dashboard.promo-area #addPromoModal .promo-modal-footer { text-align: center; padding-top: 30px; }
+.dashboard.promo-area #addPromoModal .add-promo { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 7px 20px; }
+.dashboard.promo-area #addPromoModal .percent-input-wrapper { position: relative; width: 50%; }
+.dashboard.promo-area #addPromoModal .percent-input-wrapper input { padding-right: 30px; width: 50%; }
+.dashboard.promo-area #addPromoModal .percent-input-wrapper .percent-sign { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #707070; right: 53%; }
+
+
+
+/*Attendance page*/
+
+.dashboard.attendance-area .attendance { padding: 40px 50px; }
+.dashboard.attendance-area .attendance h2 { font-size: 20px; font-weight: 600; padding-bottom: 10px; }
+.dashboard.attendance-area .attendance h4 { font-size: 16px; font-weight: 400; color: #333333; padding-bottom: 15px; }
+.dashboard.attendance-area .add-attendance { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; }
+
+.dashboard.attendance-area #addAttenModal input { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
+.dashboard.attendance-area #addAttenModal .input-group .custom-select-arrow { background: url(../images/dropdown.png) no-repeat right 10px center; background-size: 15px; cursor: pointer; }
+.dashboard.attendance-area #addAttenModal select { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
+.dashboard.attendance-area #addAttenModal .percent input { width: 55%; }
+.dashboard.attendance-area #addAttenModal .promo-modal-footer { text-align: center; padding-top: 30px; }
+.dashboard.attendance-area #addAttenModal .add-promo { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 7px 20px; }
+/* .dashboard.attendance-area #addAttenModal .percent-input-wrapper { position: relative; width: 50%; }
+.dashboard.attendance-area #addAttenModal .percent-input-wrapper input { padding-right: 30px; width: 50%; }
+.dashboard.attendance-area #addAttenModal .percent-input-wrapper .percent-sign { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #707070; right: 53%; } */
+
+.dashboard.attendance-area #addAttenModal .modal-content { border-radius: 32px; border: 1px solid transparent; }
+.dashboard.attendance-area #addAttenModal .modal-body { padding: 0; }
+.dashboard.attendance-area #addAttenModal .modal-body .attendance-modal-area { padding: 0; }
+
+
+.dashboard.attendance-area #addAttenModal .att-m { background-color: #fff; border-radius: 32px; padding-right: 20px; }
+.dashboard.attendance-area #addAttenModal .att-m .col-md-4.t-right { padding-right: 0; }
+/* .dashboard.attendance-area #addAttenModal .att-m .col-md-8 { padding-left: 0; } */
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar { padding: 25px 13px; height: 100%; width: 100%; border-top-left-radius: 29px; border-bottom-left-radius: 29px; background: #F05336; border: none; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar ul { list-style-type: none; padding: 0; margin: 0; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar ul li { margin: 15px 0; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar a.active { width: 100%; border: none; padding: 10px 8px; background: #fff; color: #F05336; border-radius: 10px; opacity: 1; text-align: left; font-size: 14px; font-weight: 500; text-decoration: none; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar li a { display: block; text-decoration: none; padding: 3px 8px; color: #fff; font-size: 14px; font-weight: 500; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar .att-heading h2 { font-size: 18px; font-weight: 500; color: #fff; margin-bottom: 25px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .next-btn { padding: 5px 35px; background: #F05336; color: #fff; border: 3px solid #F05336; border-radius: 4px; font-size: 14px; text-decoration: none; }
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .heading-main h3 { margin-bottom: 20px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area label { font-size: 16px; font-weight: 500; }
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table { width: 100%; border-collapse: collapse; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th { border: 1px solid #ddd; text-align: center; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table td { border: 1px solid #ddd; text-align: center; padding: 8px 0; font-size: 14px; font-weight: 400; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .edit-pen { width: 15px; margin: 0 10px 0 35px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .del { width: 15px; margin: 0 35px 0 10px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th { background: #F5F5F5; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th.t-name { width: 280px; text-align: left; padding: 10px 0 0 10px; font-size: 14px; font-weight: 600; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th.t-sold { padding: 10px 40px; font-size: 14px; font-weight: 600; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th.t-price { padding: 10px 40px; font-size: 14px; font-weight: 600; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th.t-qty { padding: 10px 40px; font-size: 14px; font-weight: 600; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th.t-face { padding: 10px 40px; font-size: 14px; font-weight: 600; color: #6C6C6C; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table td.tick-name { padding: 8px 0 8px 10px; text-align: left; }
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table select { padding: 5px 10px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .input-group .custom-select-arrow { background: url(../images/dropdown.png) no-repeat right 8px center; background-size: 14px; cursor: pointer; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .input-group { width: 50%; margin: 0 auto; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table input { border-radius: 4px; border: 1px solid #e4e4e4; padding: 6px 10px; font-size: 14px; font-weight: 400; color: #707070; width: 80%; }
+
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .input-wrapper { position: relative; display: inline-block; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .currency-symbol { position: absolute; left: 25px; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 500; color: #000; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table .input-wrapper input { padding-left: 20px; padding-right: 10px; font-size: 16px; width: 80%; }
+
+/* .dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper { float: right; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper { position: relative; display: inline-block; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .currency-symbol { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 500; color: #000; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper input { padding-left: 20px; padding-right: 10px; font-size: 16px; width: 80%; background: #F5F5F5; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper input::placeholder { text-align: right; } */
+
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value { padding-bottom: 110px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper { display: flex; align-items: center; float: right; gap: 10px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .currency-symbol { font-size: 14px; font-weight: 500; color: #000; margin-left: 5px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper input { padding-left: 20px; padding-right: 10px; font-size: 16px; width: 50%; background: #F5F5F5; border: 1px solid #ccc; border-radius: 4px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper input::placeholder { text-align: right; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper .label { font-size: 16px; font-weight: 500; color: #333; margin-right: 10px; }
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .total-value .input-wrapper input { direction: rtl; text-align: right; padding-left: 20px; padding-right: 10px; font-size: 16px; background: #F5F5F5; border: 1px solid #ccc; border-radius: 4px; }
+
+
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.reg-information .h-main h3 { font-size: 18px; font-weight: 500; margin-bottom: 20px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.reg-information .check-box { padding-bottom: 20px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.reg-information .mail-send { padding-bottom: 150px; }
+
+
+/*summery*/
+
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .t-img { width: 100%; height: 120px; border-radius: 8px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .order-p { font-size: 14px; margin-bottom: 5px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .order-m { font-size: 14px; margin-bottom: 5px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .order-type { margin-bottom: 5px; font-size: 16px; font-weight: 500; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area { border: 1px solid #E4E4E4; border-radius: 8px; padding: 10px 0 0 0; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .order-name { font-size: 18px; font-weight: 500; padding-bottom: 0; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .order-time-heading { font-size: 16px; font-weight: 500; color: #333333; padding-bottom: 0; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .col-md-3.photo { padding: 0; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .total-area { background: #E4E4E4; padding: 0; margin-top: 10px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area.order-summary .ticket-area .total-area .col-md-4.total-aa { float: right; }
+
+
+
+
+

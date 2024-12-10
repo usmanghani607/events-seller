@@ -16,10 +16,10 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="side-bar">
-                        <button onclick="window.location.href='booking';"><img src="images/post.png" alt=""><span>Post an Event</span></button>
-                        <button onclick="window.location.href='account';"><img src="images/list.png" alt=""><span>List of Events</span></button>
-                        <button onclick="window.location.href='change-password';"><img src="images/promo.png" alt=""><span>Promo code</span></button>
-                        <button onclick="window.location.href='change-password';"><img src="images/group.png" alt=""><span>Attendee</span></button>
+                        <button onclick="window.location.href='index';"><img src="images/post.png" alt=""><span>Post an Event</span></button>
+                        <button onclick="window.location.href='event-list';"><img src="images/list.png" alt=""><span>List of Events</span></button>
+                        <button onclick="window.location.href='promo-code';"><img src="images/promo.png" alt=""><span>Promo code</span></button>
+                        <button onclick="window.location.href='attendance';"><img src="images/group.png" alt=""><span>Attendee</span></button>
                     </div>
                 </div>
                 <div class="col-md-10">
@@ -247,8 +247,8 @@
                                                     <h5>Language</h5>
                                                 </div>
                                                 <div class="lang-btn">
-                                                    <button>Hindi</button>
-                                                    <button>English</button>
+                                                    <button id="btnHindi">Hindi</button>
+                                                    <button id="btnEnglish">English</button>
                                                     <button>Marathi</button>
                                                     <button>Bengali</button>
                                                     <button>Malayalam</button>
@@ -1035,6 +1035,37 @@
             $(this).closest('div').remove(); 
         });
     });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    
+    function changeLanguage(language) {
+        
+        alert('Language changed to: ' + language);
+    }
+
+    document.getElementById('btnHindi').addEventListener('click', function() {
+        changeLanguage('Hindi');
+    });
+
+    document.getElementById('btnEnglish').addEventListener('click', function() {
+        changeLanguage('English');
+    });
+
+    document.getElementById('btnMarathi').addEventListener('click', function() {
+        changeLanguage('Marathi');
+    });
+
+    document.getElementById('btnBengali').addEventListener('click', function() {
+        changeLanguage('Bengali');
+    });
+
+    document.getElementById('btnMalayalam').addEventListener('click', function() {
+        changeLanguage('Malayalam');
+    });
+});
+
 </script>
 
 </html>
