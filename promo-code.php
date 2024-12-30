@@ -16,10 +16,12 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="side-bar">
-                        <button onclick="window.location.href='index';"><img src="images/post.png" alt=""><span>Post an Event</span></button>
+                        <button onclick="window.location.href='index';"><img src="images/post-icon.png" alt=""><span>Post an Event</span></button>
                         <button onclick="window.location.href='event-list';"><img src="images/list.png" alt=""><span>List of Events</span></button>
                         <button onclick="window.location.href='promo-code';"><img src="images/promo-i.png" alt=""><span>Promo code</span></button>
                         <button onclick="window.location.href='attendance';"><img src="images/group.png" alt=""><span>Attendee</span></button>
+                        <button onclick="window.location.href='order';"><img src="images/order.png" alt=""><span>Orders</span></button>
+                        <button onclick="window.location.href='report';"><img src="images/report.png" alt=""><span>Report</span></button>
                     </div>
                 </div>
                 <div class="col-md-10">

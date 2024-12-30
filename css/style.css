@@ -41,11 +41,12 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 
 .dashboard .col-md-2 { padding: 0; }
 .dashboard .side-bar span{ padding-left: 10px; font-size: 16px; font-weight: 400; color: #333333; }
-.dashboard .side-bar button { width: 100%; border: none; margin-bottom: 15px; padding: 10px 8px; background: #F4F4F4 0% 0% no-repeat padding-box; border-radius: 8px; opacity: 1; text-align: left; }
+.dashboard .side-bar .side-bg { background: #F4F4F4 0% 0% no-repeat padding-box; }
+.dashboard .side-bar button { width: 100%; border: none; margin-bottom: 15px; padding: 10px 8px; background: transparent; border-radius: 8px; opacity: 1; text-align: left; }
 .dashboard .side-bar p img { width: 20px; }
 .dashboard .main-area { padding: 20px 10px; }
 
-.dashboard .account { padding: 40px 50px; }
+.dashboard .account { padding: 55px 50px 40px 50px; }
 .dashboard .account .account-area { background: #fff; padding: 10px 18px 10px 18px; margin-top: 10px; border: 1px solid #E4E4E4; border-radius: 32px; opacity: 1; }
 .dashboard .account .account-area label { font-size: 14px; color: #333333; }
 .dashboard .account .account-area input.form-control { font-size: 14px; color: #333333; font-weight: 500; }
@@ -97,11 +98,18 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 .dashboard .category .main-area.event-description .button-area { padding: 20px 0 0 0; text-align: center; }
 /* .dashboard .category .main-area.event-description #artistGallery { width: 122px; height: 110px; background: #F5F5F5; border-radius: 8px; border: 1px solid #F5F5F5; } */
 
-.dashboard .category .main-area.event-description #artistGallery { width: 122px; height: 110px; background: #F5F5F5; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; }
+/* .dashboard .category .main-area.event-description #artistGallery { width: 122px; height: 110px; background: #F5F5F5; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; } */
+
+.dashboard .category .main-area.event-description #artistGallery { width: 122px; height: 110px; background: url(../images/upload.png); background-size: 100%; background-repeat: no-repeat; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; }
+
+
 .dashboard .category .main-area.event-description #imagePreview img { margin: 5px; width: 100px; height: 100px; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
 .dashboard .category .main-area.event-description #imagePreview img:hover { transform: scale(1.1); }
 .dashboard .category .main-area.event-description .remove-img { position: absolute; top: 5px; right: 5px; background: #000; color: #fff; border: none; border-radius: 50%; cursor: pointer; height: 24px; }
 .dashboard .category .main-area.event-description .image-container { position: relative; display: inline-block; }
+
+.dashboard .category .main-area.organiser-details .input-group .custom-select-arrow { background: url('../images/dropdown.png') no-repeat right 10px center; background-size: 15px; cursor: pointer; }
+.dashboard .category .main-area.organiser-details select { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
 
 .dashboard .category .main-area.tickets #sittingImage { width: 122px; height: 110px; background: #F5F5F5; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; }
 .dashboard .category .main-area.tickets #sittingImagePreview img { margin: 5px; width: 100px; height: 100px; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
@@ -116,6 +124,32 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 .dashboard .category .main-area.event-description .ck.ck-button.ck-off { background: #fff; }
 
 .dashboard .category .main-area.banner-images .image-note { color: #707070; font-size: 14px; }
+
+.dashboard .category .main-area.banner-images .drop-zone { text-align: center; padding: 85px; width: 100%; height: 250px; background: #f5f5f5; border-radius: 16px; border: 1px solid #F5F5F5; cursor: pointer; }
+.dashboard .category .main-area.banner-images .drop-zone-text { font-size: 18px; font-weight: 500; color: #333333; margin-bottom: 0; }
+/* .dashboard .category .main-area.banner-images #EventBannerImage { width: 100%; height: 250px; background: url(../images/banner.png); background-size: 100%; background-repeat: no-repeat; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; } */
+.dashboard .category .main-area.banner-images #eventBannerPreview img { margin: 5px; width: 100%; height: auto; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
+/* .dashboard .category .main-area.banner-images #eventBannerPreview img:hover { transform: scale(1.1); } */
+.dashboard .category .main-area.banner-images .remove-img { position: absolute; top: 5px; right: 5px; background: #000; color: #fff; border: none; border-radius: 50%; cursor: pointer; height: 24px; }
+.dashboard .category .main-area.banner-images .image-container { position: relative; display: inline-block; }
+
+
+.dashboard .category .main-area.banner-images div#thumbnailContainer { font-size: 18px; font-weight: 500; color: #333333; border-radius: 16px; background: #f5f5f5; width: 230px; height: 130px; text-align: center; padding: 38px; }
+
+
+.dashboard .category .main-area.banner-images #thambnailImage { width: 230px; height: 130px; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; margin-left: -37px; margin-top: -37px; }
+.dashboard .category .main-area.banner-images #thambnailPreview img { margin: 5px; width: 100px; height: 100px; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
+/* .dashboard .category .main-area.banner-images #thambnailPreview img:hover { transform: scale(1.1); } */
+.dashboard .category .main-area.banner-images #thambnailPreview .remove-img { position: absolute; top: 5px; right: 5px; background: #000; color: #fff; border: none; border-radius: 50%; cursor: pointer; height: 24px; }
+.dashboard .category .main-area.banner-images .image-container { position: relative; display: inline-block; }
+
+.dashboard .category .main-area.banner-images #eventImage { width: 122px; height: 110px; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; }
+.dashboard .category .main-area.banner-images #eventPreview img { margin: 5px; width: 100px; height: 100px; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
+/* .dashboard .category .main-area.banner-images #eventPreview img:hover { transform: scale(1.1); } */
+.dashboard .category .main-area.banner-images .remove-img { position: absolute; top: 10px; right: 0; background: #000; color: #fff; border: none; border-radius: 50%; cursor: pointer; height: 24px; }
+/* .dashboard .category .main-area.banner-images .image-container { position: relative; display: inline-block; } */
+
+
 .dashboard .category .main-area.tickets .add-ticket-btn { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 15px; }
 .dashboard .category .main-area.tickets .add-ticket-btn img.add-t { width: 15px; margin-right: 10px; }
 .dashboard .category .main-area.tickets .sitting-arrang-btn { color: #F05336; border: 1px solid #F05336; border-radius: 4px; padding: 10px 15px; margin-left: 15px; background: #fff; }
@@ -145,19 +179,30 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 .dashboard .category .main-area.tickets #addTicketModal #ticketDesc { min-height: 80px; resize: none; border: 1px solid #E4E4E4; font-size: 14px; font-weight: 400; }
 
 
+.dashboard .category .main-area.tickets #sittingImage { width: 122px; height: 110px; border-radius: 8px; border: 1px solid #F5F5F5; cursor: pointer; }
+.dashboard .category .main-area.tickets #sittingPreview img { width: 100%; height: auto; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease-in-out; border-radius: 8px; }
+.dashboard .category .main-area.tickets .remove-img { position: absolute; top: 5px; right: 0; background: #000; color: #fff; border: none; border-radius: 50%; cursor: pointer; height: 24px; }
+
+.dashboard .category .main-area.tickets .custom-file-inputsitting { position: relative; width: 100%; display: flex; justify-content: center; align-items: center; }
+
 .dashboard .category .main-area.other-details .add-ticket-btn img.add-t { width: 15px; margin-right: 10px; }
 .dashboard .category .main-area.other-details .add-ticket-btn { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 7px 20px; }
 
 .dashboard .category .main-area.other-details .add-faq-btn img.add-t { width: 15px; margin-right: 10px; }
 .dashboard .category .main-area.other-details .add-faq-btn { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 7px 10px; }
 
-.dashboard .category .main-area.other-details label { font-size: 16px; font-weight: 400; }
+.dashboard .category .main-area.other-details label { font-size: 14px; font-weight: 400; color: #333333; }
 .dashboard .category .main-area.other-details .button-area { padding: 20px 0 0 0; text-align: center; }
 .dashboard .category .main-area.other-details .post-event-btn { padding: 5px 70px; background: #F05336; color: #fff; border: 3px solid #F05336; border-radius: 4px; font-size: 16px; text-decoration: none; }
 .dashboard .category .main-area.other-details .social input { border-left: none; border-bottom-left-radius: 0; border-top-left-radius: 0; }
 
 .dashboard .category .main-area.other-details .termField { min-height: 140px; resize: none; border: 1px solid #E4E4E4; font-size: 14px; font-weight: 400; }
 
+.dashboard .category .main-area.other-details .heading-main h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 0;
+}
 
 
 
@@ -173,10 +218,13 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 
 
 /* .dashboard.promo-area .add-ticket-btn { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 15px; } */
-.dashboard.promo-area .promo { padding: 40px 50px; }
+.dashboard.promo-area .promo { padding: 36px 35px; }
 .dashboard.promo-area .promo h2 { font-size: 20px; font-weight: 600; padding-bottom: 10px; }
 .dashboard.promo-area .promo h4 { font-size: 16px; font-weight: 400; color: #333333; padding-bottom: 15px; }
 .dashboard.promo-area .add-promo { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; }
+
+.dashboard.promo-area #addPromoModal .modal-header h5 { font-size: 18px; font-weight: 500; }
+.dashboard.promo-area #addPromoModal .modal-body label { font-size: 14px; font-weight: 500; }
 
 .dashboard.promo-area #addPromoModal input { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
 .dashboard.promo-area #addPromoModal .input-group .custom-select-arrow { background: url(../images/dropdown.png) no-repeat right 10px center; background-size: 15px; cursor: pointer; }
@@ -192,14 +240,14 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 
 /*Attendance page*/
 
-.dashboard.attendance-area .attendance { padding: 40px 50px; }
+.dashboard.attendance-area .attendance { padding: 36px 35px; }
 .dashboard.attendance-area .attendance h2 { font-size: 20px; font-weight: 600; padding-bottom: 10px; }
 .dashboard.attendance-area .attendance h4 { font-size: 16px; font-weight: 400; color: #333333; padding-bottom: 15px; }
 .dashboard.attendance-area .add-attendance { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; }
 
 .dashboard.attendance-area #addAttenModal input { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
 .dashboard.attendance-area #addAttenModal .input-group .custom-select-arrow { background: url(../images/dropdown.png) no-repeat right 10px center; background-size: 15px; cursor: pointer; }
-.dashboard.attendance-area #addAttenModal select { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #707070; }
+.dashboard.attendance-area #addAttenModal select { border-radius: 4px; border: 1px solid #e4e4e4; padding: 10px 15px; font-size: 14px; font-weight: 400; color: #000; }
 .dashboard.attendance-area #addAttenModal .percent input { width: 55%; }
 .dashboard.attendance-area #addAttenModal .promo-modal-footer { text-align: center; padding-top: 30px; }
 .dashboard.attendance-area #addAttenModal .add-promo { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 7px 20px; }
@@ -210,21 +258,23 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 .dashboard.attendance-area #addAttenModal .modal-content { border-radius: 32px; border: 1px solid transparent; }
 .dashboard.attendance-area #addAttenModal .modal-body { padding: 0; }
 .dashboard.attendance-area #addAttenModal .modal-body .attendance-modal-area { padding: 0; }
+.dashboard.attendance-area #addAttenModal .modal-body .attendance-modal-area .col-md-9 { padding-left: 0; }
 
 
 .dashboard.attendance-area #addAttenModal .att-m { background-color: #fff; border-radius: 32px; padding-right: 20px; }
 .dashboard.attendance-area #addAttenModal .att-m .col-md-4.t-right { padding-right: 0; }
 /* .dashboard.attendance-area #addAttenModal .att-m .col-md-8 { padding-left: 0; } */
-.dashboard.attendance-area #addAttenModal .att-m .att-sidebar { padding: 25px 13px; height: 100%; width: 100%; border-top-left-radius: 29px; border-bottom-left-radius: 29px; background: #F05336; border: none; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar { padding: 20px 13px; height: 100%; width: 100%; border-top-left-radius: 29px; border-bottom-left-radius: 29px; background: #F05336; border: none; }
 .dashboard.attendance-area #addAttenModal .att-m .att-sidebar ul { list-style-type: none; padding: 0; margin: 0; }
 .dashboard.attendance-area #addAttenModal .att-m .att-sidebar ul li { margin: 15px 0; }
 .dashboard.attendance-area #addAttenModal .att-m .att-sidebar a.active { width: 100%; border: none; padding: 10px 8px; background: #fff; color: #F05336; border-radius: 10px; opacity: 1; text-align: left; font-size: 14px; font-weight: 500; text-decoration: none; }
 .dashboard.attendance-area #addAttenModal .att-m .att-sidebar li a { display: block; text-decoration: none; padding: 3px 8px; color: #fff; font-size: 14px; font-weight: 500; }
-.dashboard.attendance-area #addAttenModal .att-m .att-sidebar .att-heading h2 { font-size: 18px; font-weight: 500; color: #fff; margin-bottom: 25px; }
+.dashboard.attendance-area #addAttenModal .att-m .att-sidebar .att-heading h2 { font-size: 18px; font-weight: 500; color: #fff; margin-bottom: 15px; }
 .dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .next-btn { padding: 5px 35px; background: #F05336; color: #fff; border: 3px solid #F05336; border-radius: 4px; font-size: 14px; text-decoration: none; }
 
-.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .heading-main h3 { margin-bottom: 20px; }
+.dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .heading-main h3 { font-size: 20px; font-weight: 500; margin-bottom: 20px; }
 .dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area label { font-size: 16px; font-weight: 500; }
+.dashboard.attendance-area #addAttenModal .main-area.attendance-detail { padding-top: 30px; }
 
 .dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table { width: 100%; border-collapse: collapse; }
 .dashboard.attendance-area #addAttenModal .attendance-modal-area .main-area .ticket-table th { border: 1px solid #ddd; text-align: center; }
@@ -287,5 +337,49 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Poppins'; }
 
 
 
+
+/*Event List*/
+
+.dashboard.eventlist-area .event { padding: 36px 35px; }
+/* .dashboard.eventlist-area .event h2 { font-size: 20px; font-weight: 600; padding-bottom: 10px; } */
+.dashboard.eventlist-area .event .heading h2 { font-size: 20px; font-weight: 600; }
+.dashboard.eventlist-area .event h4 { font-size: 16px; font-weight: 400; color: #333333; padding-bottom: 15px; }
+.dashboard.eventlist-area .add-event { background: #F05336; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; }
+
+
+.dashboard.eventlist-area .event .tappes .all { padding: 5px 15px; border: 1px solid #E4E4E4; background: #fff; border-radius: 4px; color: #000; text-decoration: none; margin-right: 5px; font-size: 14px; }
+.dashboard.eventlist-area .tappes .upcoming { padding: 5px 15px; border: 1px solid #E4E4E4; background: #FFFFFF 0% 0% no-repeat padding-box; border-radius: 4px; color: #000; text-decoration: none; margin-right: 5px; font-size: 14px; }
+.dashboard.eventlist-area .tappes .completed { padding: 5px 15px; border: 1px solid #E4E4E4; background: #FFFFFF 0% 0% no-repeat padding-box; border-radius: 4px; color: #000; text-decoration: none; font-size: 14px; }
+.dashboard.eventlist-area .ticket-area .t-img { width: 100%; height: 145px; object-fit: fill; border-radius: 16px; }
+
+.dashboard.eventlist-area .ticket-area { background: #fff; padding: 15px 15px; margin-top: 10px; border: 1px solid #F05336; border-radius: 20px; opacity: 1; }
+
+.dashboard.eventlist-area .ticket-area .col-md-9 { padding-left: 0; }
+.dashboard.eventlist-area .ticket-area h2 { text-align: left; font-size: 18px; font-weight: 500; letter-spacing: 0px; color: #000000; opacity: 1; margin-bottom: 0; }
+.dashboard.eventlist-area .ticket-area .date-time { padding-bottom: 8px; }
+.dashboard.eventlist-area .ticket-area .date-time .time { font-size: 12px; font-weight: 400; color: #333333; padding-right: 10px; }
+.dashboard.eventlist-area .ticket-area .date-time img.icon { width: 16px; margin-right: 5px; }
+.dashboard.eventlist-area .ticket-area .date-time img.cal-icon { width: 16px; margin-right: 5px; }
+.dashboard.eventlist-area .ticket-area .date-time .place { font-size: 12px; font-weight: 400; color: #000; }
+.dashboard.eventlist-area .ticket-area .col-md-6.left span.order-id { font-size: 13px; font-weight: 500; }
+.dashboard.eventlist-area .ticket-area .col-md-6.left span.order-number { font-size: 13px; font-weight: 400; }
+.dashboard.eventlist-area .ticket-area .col-md-6.left span.quantity { font-size: 13px; font-weight: 500; }
+.dashboard.eventlist-area .ticket-area .col-md-6.left span.ticket { font-size: 13px; font-weight: 400; }
+.dashboard.eventlist-area .ticket-area .col-md-6.right { text-align: end; margin-top: 10px; }
+.dashboard.eventlist-area .ticket-area .col-md-6.right p.stat { margin-bottom: 10px; }
+.dashboard.eventlist-area .ticket-area .col-md-6.right span.status { font-size: 13px; font-weight: 500; }
+.dashboard.eventlist-area .ticket-area .col-md-6.right span.success { font-size: 13px; font-weight: 400; }
+.dashboard.eventlist-area .tappes.nav-tabs { padding: 10px 0 10px 10px; border: none; }
+.dashboard.eventlist-area .ticket-area .ticket-button { float: inline-end; padding-top: 15px; }
+.dashboard.eventlist-area .ticket-area .ticket-button button.edit-rep { background: #E75E15 0% 0% no-repeat padding-box; border-radius: 4px; opacity: 1; color: #fff; padding: 7px 25px; border: none; font-size: 14px; font-weight: 500; margin-right: 10px; box-shadow: 0px 3px 6px #00000029; }
+.dashboard.eventlist-area .ticket-area .ticket-button button.view-rep { float: inline-end; border: 1px solid #333333; border-radius: 4px; opacity: 1; padding: 6px 25px; font-size: 14px; font-weight: 500; background: #1878D8 0% 0% no-repeat padding-box; color: #fff; }
+
+.dashboard.eventlist-area .ticket-area .form-switch .form-check-input { cursor: pointer; }
+
+.dashboard.eventlist-area .nav-tabs .nav-link.active { background-color: #E75E15 !important; color: #fff !important; }
+.dashboard.eventlist-area .ticket-area .ticket-sold .status { font-size: 14px; font-weight: 500; color: #333333; }
+.dashboard.eventlist-area .ticket-area .ticket-sold .num { font-size: 14px; font-weight: 400; color: #333333; }
+.dashboard.eventlist-area .ticket-area .event-status h2 { font-size: 14px; font-weight: 500; color: #333333; padding-bottom: 10px; }
+.dashboard.eventlist-area .ticket-area .form-check.form-switch .form-check-label { font-size: 14px; font-weight: 400; color: #000; }
 
 

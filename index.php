@@ -5,7 +5,7 @@
     <?php include 'header.php' ?>
 
     <style>
-    
+
     </style>
 </head>
 
@@ -16,10 +16,12 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="side-bar">
-                        <button onclick="window.location.href='index';"><img src="images/post.png" alt=""><span>Post an Event</span></button>
-                        <button onclick="window.location.href='event-list';"><img src="images/list.png" alt=""><span>List of Events</span></button>
-                        <button onclick="window.location.href='promo-code';"><img src="images/promo.png" alt=""><span>Promo code</span></button>
-                        <button onclick="window.location.href='attendance';"><img src="images/group.png" alt=""><span>Attendee</span></button>
+                        <button class="active side-bg" onclick="window.location.href='index';"><img src="images/post.png" alt=""><span>Post an Event</span></button>
+                        <button class="side-bg" onclick="window.location.href='event-list';"><img src="images/list.png" alt=""><span>List of Events</span></button>
+                        <button class="side-bg" onclick="window.location.href='promo-code';"><img src="images/promo.png" alt=""><span>Promo code</span></button>
+                        <button class="side-bg" onclick="window.location.href='attendance';"><img src="images/group.png" alt=""><span>Attendee</span></button>
+                        <button class="side-bg" onclick="window.location.href='order';"><img src="images/order.png" alt=""><span>Orders</span></button>
+                        <button class="side-bg" onclick="window.location.href='report';"><img src="images/report.png" alt=""><span>Report</span></button>
                     </div>
                 </div>
                 <div class="col-md-10">
@@ -101,89 +103,89 @@
                                         <div class="row">
                                             <div class="col-md-12 col-md-6 mb-3">
                                                 <label for="" class="form-label">Time Zone*</label>
-                                                    <div class="input-group">
-                                                        <select class="form-control custom-select-arrow" id="startTime">
-                                                            <option>Select time zone</option>
-                                                        </select>
-                                                    </div>
+                                                <div class="input-group">
+                                                    <select class="form-control custom-select-arrow" id="startTime">
+                                                        <option>Select time zone</option>
+                                                    </select>
+                                                </div>
                                                 <div id="firstNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="" class="form-label">Start Date*</label>
-                                                    <div class="input-group">
-                                                        <input class="form-control custom-select-arrow" id="startDate">
-                                                    </div>
+                                                <div class="input-group">
+                                                    <input class="form-control custom-select-arrow" id="startDate">
+                                                </div>
                                                 <div id="firstNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="" class="form-label">Start Time*</label>
-                                                    <div class="input-group">
-                                                        <select class="form-control custom-select-arrow" id="startTime">
-                                                            <option value="0">00:00</option>
-                                                            <option value="1">01:00</option>
-                                                            <option value="2">02:00</option>
-                                                            <option value="3">03:00</option>
-                                                            <option value="4">04:00</option>
-                                                            <option value="5">05:00</option>
-                                                            <option value="6">06:00</option>
-                                                            <option value="7">07:00</option>
-                                                            <option value="8">08:00</option>
-                                                            <option value="9">09:00</option>
-                                                            <option value="10">10:00</option>
-                                                            <option value="11">11:00</option>
-                                                            <option value="12">12:00</option>
-                                                            <option value="13">13:00</option>
-                                                            <option value="14">14:00</option>
-                                                            <option value="15">15:00</option>
-                                                            <option value="16">16:00</option>
-                                                            <option value="17">17:00</option>
-                                                            <option value="18">18:00</option>
-                                                            <option value="19">19:00</option>
-                                                            <option value="20">20:00</option>
-                                                            <option value="21">21:00</option>
-                                                            <option value="22">22:00</option>
-                                                            <option value="23">23:00</option>
-                                                        </select>
-                                                    </div>
+                                                <div class="input-group">
+                                                    <select class="form-control custom-select-arrow" id="startTime">
+                                                        <option value="0">00:00</option>
+                                                        <option value="1">01:00</option>
+                                                        <option value="2">02:00</option>
+                                                        <option value="3">03:00</option>
+                                                        <option value="4">04:00</option>
+                                                        <option value="5">05:00</option>
+                                                        <option value="6">06:00</option>
+                                                        <option value="7">07:00</option>
+                                                        <option value="8">08:00</option>
+                                                        <option value="9">09:00</option>
+                                                        <option value="10">10:00</option>
+                                                        <option value="11">11:00</option>
+                                                        <option value="12">12:00</option>
+                                                        <option value="13">13:00</option>
+                                                        <option value="14">14:00</option>
+                                                        <option value="15">15:00</option>
+                                                        <option value="16">16:00</option>
+                                                        <option value="17">17:00</option>
+                                                        <option value="18">18:00</option>
+                                                        <option value="19">19:00</option>
+                                                        <option value="20">20:00</option>
+                                                        <option value="21">21:00</option>
+                                                        <option value="22">22:00</option>
+                                                        <option value="23">23:00</option>
+                                                    </select>
+                                                </div>
                                                 <div id="lastNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="" class="form-label">End Date *</label>
-                                                    <div class="input-group">
-                                                        <input class="form-control custom-select-arrow" id="endDate">
-                                                    </div>
+                                                <div class="input-group">
+                                                    <input class="form-control custom-select-arrow" id="endDate">
+                                                </div>
                                                 <div id="firstNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="" class="form-label">End time *</label>
-                                                    <div class="input-group">
-                                                        <select class="form-control custom-select-arrow" id="startTime">
-                                                            <option value="0">00:00</option>
-                                                            <option value="1">01:00</option>
-                                                            <option value="2">02:00</option>
-                                                            <option value="3">03:00</option>
-                                                            <option value="4">04:00</option>
-                                                            <option value="5">05:00</option>
-                                                            <option value="6">06:00</option>
-                                                            <option value="7">07:00</option>
-                                                            <option value="8">08:00</option>
-                                                            <option value="9">09:00</option>
-                                                            <option value="10">10:00</option>
-                                                            <option value="11">11:00</option>
-                                                            <option value="12">12:00</option>
-                                                            <option value="13">13:00</option>
-                                                            <option value="14">14:00</option>
-                                                            <option value="15">15:00</option>
-                                                            <option value="16">16:00</option>
-                                                            <option value="17">17:00</option>
-                                                            <option value="18">18:00</option>
-                                                            <option value="19">19:00</option>
-                                                            <option value="20">20:00</option>
-                                                            <option value="21">21:00</option>
-                                                            <option value="22">22:00</option>
-                                                            <option value="23">23:00</option>
-                                                        </select>
-                                                    </div>
+                                                <div class="input-group">
+                                                    <select class="form-control custom-select-arrow" id="startTime">
+                                                        <option value="0">00:00</option>
+                                                        <option value="1">01:00</option>
+                                                        <option value="2">02:00</option>
+                                                        <option value="3">03:00</option>
+                                                        <option value="4">04:00</option>
+                                                        <option value="5">05:00</option>
+                                                        <option value="6">06:00</option>
+                                                        <option value="7">07:00</option>
+                                                        <option value="8">08:00</option>
+                                                        <option value="9">09:00</option>
+                                                        <option value="10">10:00</option>
+                                                        <option value="11">11:00</option>
+                                                        <option value="12">12:00</option>
+                                                        <option value="13">13:00</option>
+                                                        <option value="14">14:00</option>
+                                                        <option value="15">15:00</option>
+                                                        <option value="16">16:00</option>
+                                                        <option value="17">17:00</option>
+                                                        <option value="18">18:00</option>
+                                                        <option value="19">19:00</option>
+                                                        <option value="20">20:00</option>
+                                                        <option value="21">21:00</option>
+                                                        <option value="22">22:00</option>
+                                                        <option value="23">23:00</option>
+                                                    </select>
+                                                </div>
                                                 <div id="lastNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-12">
@@ -307,7 +309,18 @@
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="" class="form-label">Enter your Tax ID#</label>
-                                                <input type="text" class="form-control lastNameField" name="lastName" placeholder="Tax ID">
+                                                <!-- <input type="text" class="form-control lastNameField" name="lastName" placeholder="Tax ID"> -->
+                                                <div class="input-group">
+                                                    <select class="form-control custom-select-arrow" id="tax">
+                                                        <option>Event Organizer pays</option>
+                                                        <option>Customer Pays</option>
+                                                    </select>
+                                                </div>
+                                                <div id="lastNameError" class="error-message text-danger"></div>
+                                            </div>
+                                            <div class="col-md-6 mb-3" id="taxDiv" style="display: none;">
+                                                <label for="" class="form-label">Tax (in %)</label>
+                                                <input type="text" class="form-control lastNameField" name="">
                                                 <div id="lastNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-12">
@@ -373,19 +386,38 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 mb-3">
-                                                <input type="text" class="form-control firstNameField" name="firstName" placeholder="Organization name">
+                                                <!-- <input type="file" id="EventBannerImage" class="form-control" multiple accept="image/*">
+                                                <div id="lastNameError" class="error-message text-danger"></div>
+                                                <div id="eventBannerPreview" style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;"></div> -->
+                                                <div id="eventBannerDropZone" class="drop-zone">
+                                                    <p class="drop-zone-text">Drop file here <br>or <br>click here to upload</p>
+                                                    <input type="file" id="EventBannerImage" class="form-control" accept="image/*" style="display: none;">
+                                                </div>
+                                                <div id="eventBannerPreview" style="margin-top: 5px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
                                                 <span class="image-note">Note: The ideal dimension is 1080x470 pixels and the maximum image size is 4 MB</span>
-                                                <div id="firstNameError" class="error-message text-danger"></div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <label for="" class="form-label">Thumbnail Image</label>
-                                                <input type="text" class="form-control lastNameField" name="lastName">
-                                                <div id="lastNameError" class="error-message text-danger"></div>
+                                                <div class="custom-file-input thumb" id="thumbnailContainer">
+                                                    <input type="file" id="thambnailImage" class="form-control" accept="image/*" style="opacity: 0; position: absolute; z-index: 2;">
+                                                    <div id="thumbnailPlaceholder" class="thumbnail-placeholder">
+                                                        <!-- <img src="images/upload.png" alt=""> -->
+                                                        <p>Click here <br>to upload</p>
+                                                    </div>
+                                                </div>
+                                                <div id="thambnailPreview" style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <label for="" class="form-label">Event Gallery</label>
-                                                <input type="text" class="form-control lastNameField" name="lastName">
+                                                <!-- <input type="file" id="eventGallery" class="form-control" multiple accept="image/*"> -->
+                                                <div class="custom-file-inputeventGallery" id="eventGalleryContainer">
+                                                    <input type="file" id="eventImage" class="form-control" accept="image/*" style="opacity: 0; position: absolute; z-index: 2;">
+                                                    <div id="eventGalleryPlaceholder" class="eventGallery-placeholder">
+                                                        <img src="images/upload.png" alt="">
+                                                    </div>
+                                                </div>
                                                 <div id="lastNameError" class="error-message text-danger"></div>
+                                                <div id="eventPreview" style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="button-area">
@@ -544,7 +576,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <!-- Sitting Modal -->
                                             <div class="modal fade" id="sittingModal" tabindex="-1" aria-labelledby="sittingModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -557,9 +589,16 @@
                                                             <form>
                                                                 <div class="row">
                                                                     <div class="col-md-12 mb-3">
-                                                                        <!-- <input type="text" class="form-control" id="ticketName" placeholder="Enter ticket name"> -->
-                                                                        <input type="file" id="sittingImage" class="form-control" multiple accept="image/*">
-                                                                        <div id="sittingImagePreview" style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                                                                        
+                                                                        <div class="custom-file-inputsitting" id="sittingContainer">
+                                                                            <input type="file" id="sittingImage" class="form-control" accept="image/*" style="opacity: 0; position: absolute; z-index: 2;">
+                                                                            <div id="eventGalleryPlaceholder" class="eventGallery-placeholder">
+                                                                                <img src="images/upload.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="lastNameError" class="error-message text-danger"></div>
+                                                                        <div id="sittingPreview" style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                                                                        
                                                                     </div>
                                                                 </div>
                                                             </form>
@@ -594,10 +633,10 @@
                                                 <label for="" class="form-label">Answer</label>
                                                 <input type="text" class="form-control" name="" placeholder="Answer">
                                             </div>
-                                            <div class="col-md-12 mb-3">
+                                            <div class="col-md-12 mb-4">
                                                 <button class="add-faq-btn"><img src="images/circle-white.png" alt="add-icon" class="add-t">Add FAQ</button>
                                             </div>
-                                            
+
                                             <div id="faqContainer"></div>
 
                                             <div class="heading-main">
@@ -631,7 +670,7 @@
                                                     <input type="text" class="form-control lastNameField" name="lastName" placeholder="https://youtube.com/name">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-12 mb-3">
                                                 <div class="button-area">
                                                     <a href="" class="post-event-btn" id="next">Post My Event</a>
                                                 </div>
@@ -683,7 +722,7 @@
 
         const nextBtnDateTime = document.getElementById("date-time");
         nextBtnDateTime.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -701,7 +740,7 @@
 
         const nextBtnCategoryLanguages = document.getElementById("category-languages");
         nextBtnCategoryLanguages.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -719,7 +758,7 @@
 
         const nextBtnOrganiserDetails = document.getElementById("organiser-details");
         nextBtnOrganiserDetails.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -737,7 +776,7 @@
 
         const nextBtnEventDescription = document.getElementById("event-description");
         nextBtnEventDescription.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -755,7 +794,7 @@
 
         const nextBtnBannerImages = document.getElementById("banner-images");
         nextBtnBannerImages.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -773,7 +812,7 @@
 
         const nextBtnTickets = document.getElementById("tickets");
         nextBtnTickets.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -791,7 +830,7 @@
 
         const nextBtnOtherDetails = document.getElementById("other-details");
         nextBtnOtherDetails.addEventListener('click', function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             sections.forEach(section => section.style.display = 'none');
 
@@ -912,7 +951,8 @@
             .create(document.querySelector('#eventDesc'), {
                 toolbar: ['undo', 'redo', 'bold', 'italic', 'underline', 'strikethrough', 'link', 'blockQuote',
                     'imageUpload', 'mediaEmbed', 'emoji', 'fontSize', 'fontFamily', 'alignment', 'numberedList',
-                    'bulletedList', 'outdent', 'indent', 'code', 'codeBlock', 'removeFormat', 'subscript', 'superscript']
+                    'bulletedList', 'outdent', 'indent', 'code', 'codeBlock', 'removeFormat', 'subscript', 'superscript'
+                ]
             })
             .catch(error => {
                 console.error(error);
@@ -924,13 +964,13 @@
     document.getElementById('artistGallery').addEventListener('change', function(event) {
         const files = event.target.files;
         const previewContainer = document.getElementById('imagePreview');
-        previewContainer.innerHTML = ''; 
+        previewContainer.innerHTML = '';
 
         Array.from(files).forEach(file => {
             if (file.type.startsWith('image/')) {
                 const reader = new FileReader();
 
-                
+
                 reader.onload = function(e) {
                     const imgContainer = document.createElement('div');
                     imgContainer.classList.add('image-container');
@@ -938,21 +978,291 @@
                     const img = document.createElement('img');
                     img.src = e.target.result;
 
-                    
+
                     const removeButton = document.createElement('button');
                     removeButton.classList.add('remove-img');
                     removeButton.innerHTML = '&times;';
 
-                    
+
                     removeButton.addEventListener('click', function() {
-                        imgContainer.remove(); 
+                        imgContainer.remove();
                     });
 
-                    
+
                     imgContainer.appendChild(img);
                     imgContainer.appendChild(removeButton);
 
-                    
+
+                    previewContainer.appendChild(imgContainer);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    document.getElementById('thambnailImage').addEventListener('change', function(event) {
+        const files = event.target.files;
+        const previewContainer = document.getElementById('thambnailPreview');
+        previewContainer.innerHTML = '';
+
+        Array.from(files).forEach(file => {
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+
+                reader.onload = function(e) {
+                    const imgContainer = document.createElement('div');
+                    imgContainer.classList.add('image-container');
+
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+
+
+                    const removeButton = document.createElement('button');
+                    removeButton.classList.add('remove-img');
+                    removeButton.innerHTML = '&times;';
+
+
+                    removeButton.addEventListener('click', function() {
+                        imgContainer.remove();
+                    });
+
+
+                    imgContainer.appendChild(img);
+                    imgContainer.appendChild(removeButton);
+
+
+                    previewContainer.appendChild(imgContainer);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    const dropZone = document.getElementById('eventBannerDropZone');
+    const fileInput = document.getElementById('EventBannerImage');
+    const previewContainer = document.getElementById('eventBannerPreview');
+
+    dropZone.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', handleFile);
+
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('dragover');
+    });
+
+    dropZone.addEventListener('dragleave', () => {
+        dropZone.classList.remove('dragover');
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('dragover');
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+            fileInput.files = files;
+            handleFile({
+                target: {
+                    files
+                }
+            });
+        }
+    });
+
+    function handleFile(event) {
+        const file = event.target.files[0];
+        if (file && file.type.startsWith('image/')) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+
+                previewContainer.innerHTML = '';
+
+                const imgContainer = document.createElement('div');
+                imgContainer.style.position = 'relative';
+                imgContainer.style.display = 'inline-block';
+
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+
+                const removeButton = document.createElement('button');
+                removeButton.innerHTML = '&times;';
+                removeButton.style.position = 'absolute';
+                removeButton.style.top = '10px';
+                removeButton.style.right = '0';
+                removeButton.style.backgroundColor = 'black';
+                removeButton.style.color = 'white';
+                removeButton.style.border = 'none';
+                removeButton.style.borderRadius = '50%';
+                removeButton.style.cursor = 'pointer';
+
+                removeButton.addEventListener('click', function() {
+                    imgContainer.remove();
+                    fileInput.value = '';
+                });
+
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(removeButton);
+                previewContainer.appendChild(imgContainer);
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            previewContainer.innerHTML = '<p class="error-message text-danger">Invalid file type. Please upload an image.</p>';
+        }
+    }
+
+
+
+    const selectedFiles = [];
+
+    document.getElementById('eventGalleryContainer').addEventListener('change', function(event) {
+        const files = Array.from(event.target.files);
+        const previewContainer = document.getElementById('eventPreview');
+
+        files.forEach(file => {
+            if (!selectedFiles.some(f => f.name === file.name)) {
+                selectedFiles.push(file);
+
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+
+                    reader.onload = function(e) {
+
+                        const imgContainer = document.createElement('div');
+                        imgContainer.classList.add('image-container');
+                        imgContainer.style.position = 'relative';
+                        imgContainer.style.display = 'inline-block';
+
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.maxWidth = '150px';
+                        img.style.height = '100px';
+
+                        const removeButton = document.createElement('button');
+                        removeButton.innerHTML = '&times;';
+                        removeButton.classList.add('remove-img');
+                        removeButton.style.position = 'absolute';
+                        removeButton.style.top = '5px';
+                        removeButton.style.right = '5px';
+                        removeButton.style.backgroundColor = 'black';
+                        removeButton.style.color = 'white';
+                        removeButton.style.border = 'none';
+                        removeButton.style.borderRadius = '50%';
+                        removeButton.style.cursor = 'pointer';
+
+                        removeButton.addEventListener('click', function() {
+                            const index = selectedFiles.indexOf(file);
+                            if (index > -1) selectedFiles.splice(index, 1);
+                            imgContainer.remove();
+                        });
+
+                        imgContainer.appendChild(img);
+                        imgContainer.appendChild(removeButton);
+                        previewContainer.appendChild(imgContainer);
+                    };
+
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+
+        event.target.value = '';
+    });
+
+    // document.getElementById('sittingContainer').addEventListener('change', function(event) {
+    //     const files = Array.from(event.target.files);
+    //     const previewContainer = document.getElementById('sittingPreview');
+
+    //     files.forEach(file => {
+    //         if (!selectedFiles.some(f => f.name === file.name)) {
+    //             selectedFiles.push(file);
+
+    //             if (file.type.startsWith('image/')) {
+    //                 const reader = new FileReader();
+
+    //                 reader.onload = function(e) {
+
+    //                     const imgContainer = document.createElement('div');
+    //                     imgContainer.classList.add('image-container');
+    //                     imgContainer.style.position = 'relative';
+    //                     imgContainer.style.display = 'inline-block';
+
+    //                     const img = document.createElement('img');
+    //                     img.src = e.target.result;
+    //                     img.style.maxWidth = '100%';
+    //                     img.style.height = 'auto';
+
+    //                     const removeButton = document.createElement('button');
+    //                     removeButton.innerHTML = '&times;';
+    //                     removeButton.classList.add('remove-img');
+    //                     removeButton.style.position = 'absolute';
+    //                     removeButton.style.top = '5px';
+    //                     removeButton.style.right = '5px';
+    //                     removeButton.style.backgroundColor = 'black';
+    //                     removeButton.style.color = 'white';
+    //                     removeButton.style.border = 'none';
+    //                     removeButton.style.borderRadius = '50%';
+    //                     removeButton.style.cursor = 'pointer';
+
+    //                     removeButton.addEventListener('click', function() {
+    //                         const index = selectedFiles.indexOf(file);
+    //                         if (index > -1) selectedFiles.splice(index, 1);
+    //                         imgContainer.remove();
+    //                     });
+
+    //                     imgContainer.appendChild(img);
+    //                     imgContainer.appendChild(removeButton);
+    //                     previewContainer.appendChild(imgContainer);
+    //                 };
+
+    //                 reader.readAsDataURL(file);
+    //             }
+    //         }
+    //     });
+
+    //     event.target.value = '';
+    // });
+
+    document.getElementById('sittingImage').addEventListener('change', function(event) {
+        const files = event.target.files;
+        const previewContainer = document.getElementById('sittingPreview');
+        previewContainer.innerHTML = '';
+
+        Array.from(files).forEach(file => {
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+
+                reader.onload = function(e) {
+                    const imgContainer = document.createElement('div');
+                    imgContainer.classList.add('image-container');
+
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+
+
+                    const removeButton = document.createElement('button');
+                    removeButton.classList.add('remove-img');
+                    removeButton.innerHTML = '&times;';
+
+
+                    removeButton.addEventListener('click', function() {
+                        imgContainer.remove();
+                    });
+
+
+                    imgContainer.appendChild(img);
+                    imgContainer.appendChild(removeButton);
+
+
                     previewContainer.appendChild(imgContainer);
                 };
 
@@ -966,13 +1276,13 @@
     document.getElementById('sittingImage').addEventListener('change', function(event) {
         const files = event.target.files;
         const previewContainer = document.getElementById('sittingImagePreview');
-        previewContainer.innerHTML = ''; 
+        previewContainer.innerHTML = '';
 
         Array.from(files).forEach(file => {
             if (file.type.startsWith('image/')) {
                 const reader = new FileReader();
 
-                
+
                 reader.onload = function(e) {
                     const imgContainer = document.createElement('div');
                     imgContainer.classList.add('image-container');
@@ -980,21 +1290,21 @@
                     const img = document.createElement('img');
                     img.src = e.target.result;
 
-                    
+
                     const removeButton = document.createElement('button');
                     removeButton.classList.add('remove-img');
                     removeButton.innerHTML = '&times;';
 
-                    
+
                     removeButton.addEventListener('click', function() {
-                        imgContainer.remove(); 
+                        imgContainer.remove();
                     });
 
-                    
+
                     imgContainer.appendChild(img);
                     imgContainer.appendChild(removeButton);
 
-                    
+
                     previewContainer.appendChild(imgContainer);
                 };
 
@@ -1005,10 +1315,10 @@
 </script>
 
 <script>
-  $(document).ready(function() {
-        
+    $(document).ready(function() {
+
         $(".add-faq-btn").click(function(event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             var newFaq = `
                 <div class="row">
@@ -1030,42 +1340,65 @@
         });
 
         $(document).on("click", ".remove-faq-btn", function() {
-            $(this).closest('div').prev().remove(); 
-            $(this).closest('div').prev().remove(); 
-            $(this).closest('div').remove(); 
+            $(this).closest('div').prev().remove();
+            $(this).closest('div').prev().remove();
+            $(this).closest('div').remove();
         });
     });
 </script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-    
-    function changeLanguage(language) {
-        
-        alert('Language changed to: ' + language);
-    }
 
-    document.getElementById('btnHindi').addEventListener('click', function() {
-        changeLanguage('Hindi');
+        function changeLanguage(language) {
+
+            alert('Language changed to: ' + language);
+        }
+
+        document.getElementById('btnHindi').addEventListener('click', function() {
+            changeLanguage('Hindi');
+        });
+
+        document.getElementById('btnEnglish').addEventListener('click', function() {
+            changeLanguage('English');
+        });
+
+        document.getElementById('btnMarathi').addEventListener('click', function() {
+            changeLanguage('Marathi');
+        });
+
+        document.getElementById('btnBengali').addEventListener('click', function() {
+            changeLanguage('Bengali');
+        });
+
+        document.getElementById('btnMalayalam').addEventListener('click', function() {
+            changeLanguage('Malayalam');
+        });
     });
+</script>
 
-    document.getElementById('btnEnglish').addEventListener('click', function() {
-        changeLanguage('English');
+<script>
+    const buttons = document.querySelectorAll(".side-bar .side-bg");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            this.classList.add("active");
+        });
     });
+</script>
 
-    document.getElementById('btnMarathi').addEventListener('click', function() {
-        changeLanguage('Marathi');
+<script>
+    document.getElementById('tax').addEventListener('change', function() {
+        var taxDiv = document.getElementById('taxDiv');
+        if (this.value === 'Customer Pays') {
+            taxDiv.style.display = 'block';
+        } else {
+            taxDiv.style.display = 'none';
+        }
     });
-
-    document.getElementById('btnBengali').addEventListener('click', function() {
-        changeLanguage('Bengali');
-    });
-
-    document.getElementById('btnMalayalam').addEventListener('click', function() {
-        changeLanguage('Malayalam');
-    });
-});
-
 </script>
 
 </html>
