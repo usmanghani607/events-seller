@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
-    
+
     <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ckeditor5-emojis@1.0.0/src/emoji.min.js"></script>
 
@@ -47,17 +47,16 @@
                     <div class="container-fluid">
                         <div class="col">
                             <div class="logo_left">
-                                <a href="/"><img src="images/logo.png" alt="logo"></a>
+                                <a href="index"><img src="images/logo.png" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col user-dropdown" style="display: none;">
                             <div class="right_btn d-flex align-items-center">
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle login-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Karan
                                     </button>
                                     <ul class="dropdown-menu custom-dropdown-menu">
-                                        <li><a class="dropdown-item" href="logout.php" id="logoutBtn">Logout</a></li>
+                                        <li><a class="dropdown-item" href="index" id="logoutBtn">Logout</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -67,6 +66,29 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        $(document).ready(function() {
+            var userName = sessionStorage.getItem('userName'); 
+
+            if (userName) {
+                console.log("Logged-in User: " + userName);
+                $(".dropdown-toggle.login-btn").text(userName); 
+                $(".user-dropdown").show(); 
+            } else {
+                console.log("No user logged in");
+                $(".user-dropdown").hide(); 
+            }
+        });
+
+        $("#logoutBtn").on("click", function() {
+            sessionStorage.removeItem("userName"); 
+            $(".user-dropdown").hide(); 
+            window.location.href = "index"; 
+        });
+
+    </script>
 
 </body>
 

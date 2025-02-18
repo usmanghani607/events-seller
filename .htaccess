@@ -8,6 +8,7 @@ RewriteEngine On
 
 # Handle the root URL ("/") and rewrite it to index.php
 RewriteRule ^$ index.php [L]
+RewriteRule ^event-add$ event-add.php [L]
 
 # If the requested file or directory does not exist
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -16,5 +17,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Rewrite all other URLs to .php files (remove .php extension)
 RewriteRule ^(.*)$ $1.php [L]
 
-SetEnv LOGIN_EMAIL "ios-app@quicklly.com"
-SetEnv LOGIN_PASSWORD "vqdspaway8"
