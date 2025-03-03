@@ -4,9 +4,11 @@
 <head>
     <?php include 'header.php' ?>
 
-    <style>
-    
-    </style>
+    <script>
+        if (!sessionStorage.getItem('userName')) {
+            window.location.href = "index"; 
+        }
+    </script>
 </head>
 
 <body style="background: #F8F8F8;">

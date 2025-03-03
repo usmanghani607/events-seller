@@ -82,8 +82,14 @@
             }
         });
 
+        // $("#logoutBtn").on("click", function() {
+        //     sessionStorage.removeItem("userName"); 
+        //     $(".user-dropdown").hide(); 
+        //     window.location.href = "index"; 
+        // });
+
         $("#logoutBtn").on("click", function() {
-            sessionStorage.removeItem("userName"); 
+            sessionStorage.clear(); 
             $(".user-dropdown").hide(); 
             window.location.href = "index"; 
         });
